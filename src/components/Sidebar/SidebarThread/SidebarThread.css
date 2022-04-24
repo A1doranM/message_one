@@ -12,5 +12,13 @@
 }
 
 .sidebarThread .sidebarThread__details {
+    margin-left: 1.5rem;
+    position: relative;
+    width: 100%;
+}
 
+.sidebarThread .sidebarThread__details .sidebarThread__timestamp {
+    position: absolute;
+    top: 1rem;
+    right: 0;
 }
