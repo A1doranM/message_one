@@ -1,0 +1,16 @@
+.sidebarThread {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid var(--color-light);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.sidebarThread:hover {
+    background-color: var(--color-primary);
+}
+
+.sidebarThread .sidebarThread__details {
+
+}

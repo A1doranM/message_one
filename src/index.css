@@ -62,7 +62,7 @@ table {
 :root {
     --color-bg: #1f304e;
     --color-bg-variant: #2d4671;
-    --color-primary: #00000;
+    --color-primary: rgba(2, 150, 199);
     --color-primary-variant: #00000;
     --color-white: #fff;
     --color-light: rgba(190, 190, 190, 0.1);

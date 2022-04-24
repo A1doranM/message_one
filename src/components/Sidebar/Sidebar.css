@@ -22,3 +22,15 @@
     border-radius: 0.5rem;
     padding: 2px;
 }
+
+.sidebar__input {
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+    color: var(--color-white);
+    flex: 1;
+}
+
+.MuiIconButton-root.sidebar__button {
+    color: var(--color-white);
+}
