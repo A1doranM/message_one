@@ -4,12 +4,12 @@ import {Avatar} from "@mui/material";
 
 function SidebarThread(props) {
     return (
-        <div className="sidebarThread">
-            <Avatar className="sidebarThread__avatar"/>
-            <div className="sidebarThread__details">
+        <div className="sidebar-thread">
+            <Avatar className="sidebar-thread__avatar"/>
+            <div className="sidebar-thread__details">
                 <h3>Message</h3>
                 <p>Message info</p>
-                <small className="sidebarThread__timestamp">timestamp</small>
+                <small className="sidebar-thread__timestamp">timestamp</small>
             </div>
         </div>
     );

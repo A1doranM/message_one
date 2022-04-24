@@ -19,7 +19,7 @@ function Sidebar(props) {
                     <SearchIcon className="sidebar__searchIcon"/>
                     <input type="text" placeholder="Search" className="sidebar__input"/>
                 </div>
-                <IconButton variant="outlined" className="sidebar__button">
+                <IconButton variant="outlined" className="button-light">
                     <BorderColorOutlined/>
                 </IconButton>
             </div>
@@ -27,14 +27,14 @@ function Sidebar(props) {
                 <SidebarThread/>
             </div>
             <div className="sidebar__bottom">
-                <Avatar className=""/>
-                <IconButton className="sidebar__button">
+                <Avatar className="sidebar__avatar"/>
+                <IconButton className="button-light">
                     <PhoneOutlined/>
                 </IconButton>
-                <IconButton className="sidebar__button">
+                <IconButton className="button-light">
                     <QuestionAnswerOutlined/>
                 </IconButton>
-                <IconButton className="sidebar__button">
+                <IconButton className="button-light">
                     <Settings/>
                 </IconButton>
             </div>

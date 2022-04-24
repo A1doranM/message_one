@@ -1,0 +1,38 @@
+.thread {
+    background-color: var(--color-bg);
+    display: flex;
+    flex: 0.65;
+    flex-direction: column;
+    height: 100%;
+}
+
+.thread .thread-header {
+    display: flex;
+    border-bottom: 1px solid var(--color-light);
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.thread .thread-header__contents {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    color: var(--color-white);
+    padding: 1rem;
+}
+
+.thread .thread-header__contents-info > h3, h4 {
+    font-weight: 500;
+}
+
+.thread .thread-header__contents-info > h3 {
+    font-size: 18px;
+}
+
+.thread .thread-header__contents-info > h4 {
+    font-size: 14px;
+    color: var(--color-light);
+}
+
