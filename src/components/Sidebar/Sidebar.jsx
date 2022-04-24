@@ -1,8 +1,14 @@
 import React from "react";
 import "./Sidebar.css";
 import SearchIcon from "@mui/icons-material/Search";
-import {BorderColorOutlined} from "@mui/icons-material";
-import {IconButton} from "@mui/material";
+import {
+    BorderColorOutlined,
+    PhoneOutlined,
+    QuestionAnswer,
+    QuestionAnswerOutlined,
+    Settings
+} from "@mui/icons-material";
+import {Avatar, IconButton} from "@mui/material";
 import SidebarThread from "./SidebarThread/SidebarThread";
 
 function Sidebar(props) {
@@ -19,10 +25,19 @@ function Sidebar(props) {
             </div>
             <div className="sidebar__threads">
                 <SidebarThread/>
-                <SidebarThread/>
-                <SidebarThread/>
             </div>
-            <div className="sidebar__bottom"></div>
+            <div className="sidebar__bottom">
+                <Avatar className=""/>
+                <IconButton className="sidebar__button">
+                    <PhoneOutlined/>
+                </IconButton>
+                <IconButton className="sidebar__button">
+                    <QuestionAnswerOutlined/>
+                </IconButton>
+                <IconButton className="sidebar__button">
+                    <Settings/>
+                </IconButton>
+            </div>
         </aside>
     );
 }

@@ -1,18 +1,18 @@
 .sidebar {
     display: flex;
-    height: 100%;
     flex-direction: column;
     border-right: 1px solid var(--color-light);
+    height: inherit;
 }
 
-.sidebar__header {
+.sidebar .sidebar__header {
     display: flex;
     height: 5rem;
     padding: 1rem;
     align-items: center;
 }
 
-.sidebar__search {
+.sidebar .sidebar__header .sidebar__search {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@
     padding: 2px;
 }
 
-.sidebar__input {
+.sidebar .sidebar__input {
     border: none;
     background-color: transparent;
     outline-width: 0;
@@ -31,6 +31,35 @@
     flex: 1;
 }
 
-.MuiIconButton-root.sidebar__button {
+.sidebar .MuiIconButton-root.sidebar__button {
     color: var(--color-white);
+}
+
+.sidebar .MuiIconButton-root.sidebar__button:hover {
+    color: var(--color-primary);
+}
+
+/********** SIDEBAR THREADS ***********/
+
+.sidebar__threads {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.sidebar__threads::-webkit-scrollbar {
+    display: none;
+}
+
+/********** SIDEBAR FOOTER ***********/
+
+.sidebar .sidebar__bottom {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--color-light);
+}
+
+.sidebar .sidebar__bottom__avatar:hover {
+    cursor: pointer;
+    opacity: 0.5;
 }

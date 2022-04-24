@@ -88,7 +88,7 @@ html {
 
 html { font-size: 10px; }
 
-body {
+.app {
     display: grid;
     grid-template-columns: 0.24fr 0.75fr;
     height: 100vh;
