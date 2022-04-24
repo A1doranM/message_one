@@ -2,7 +2,7 @@
     display: flex;
     height: 100%;
     flex-direction: column;
-    border-right: 1px solid rgba(190, 190, 190, 0.1);
+    border-right: 1px solid var(--color-light);
 }
 
 .sidebar__header {
@@ -13,5 +13,12 @@
 }
 
 .sidebar__search {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: var(--color-bg-variant);
+    color: var(--color-white);
+    border-radius: 0.5rem;
+    padding: 2px;
 }

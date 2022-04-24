@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    box-sizing: border-box;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -55,13 +56,44 @@ table {
 }
 
 /********************************************/
-/*             CUSTOM STYLES                */
+/*                VARIABLES                 */
 /********************************************/
 
-* {
-    font-size: 10px;
+:root {
+    --color-bg: #1f304e;
+    --color-bg-variant: #2d4671;
+    --color-primary: #00000;
+    --color-primary-variant: #00000;
+    --color-white: #fff;
+    --color-light: rgba(190, 190, 190, 0.1);
+
+    --transition: all 400ms ease;
+
+    --container-width-lg: 40%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 /********************************************/
-/*                VARIABLES                 */
+/*             CUSTOM STYLES                */
 /********************************************/
+
+html { font-size: 10px; }
+
+body {
+    display: grid;
+    grid-template-columns: 0.24fr 0.75fr;
+    height: 100vh;
+    background-color: var(--color-bg);
+}
+
+
+
