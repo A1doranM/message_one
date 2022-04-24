@@ -1,0 +1,17 @@
+.sidebar {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    border-right: 1px solid rgba(190, 190, 190, 0.1);
+}
+
+.sidebar__header {
+    display: flex;
+    height: 5rem;
+    padding: 1rem;
+    align-items: center;
+}
+
+.sidebar__search {
+
+}

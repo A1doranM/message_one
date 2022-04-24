@@ -45,7 +45,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
+    content: "";
     content: none;
 }
 
@@ -58,3 +58,10 @@ table {
 /*             CUSTOM STYLES                */
 /********************************************/
 
+* {
+    font-size: 10px;
+}
+
+/********************************************/
+/*                VARIABLES                 */
+/********************************************/
