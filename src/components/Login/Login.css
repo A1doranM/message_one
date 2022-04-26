@@ -1,4 +1,5 @@
 .login {
+    grid-column: 1/span 2;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

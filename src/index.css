@@ -58,6 +58,7 @@ table {
 /********************************************/
 
 :root {
+    --color-bg-dark: #122135;
     --color-bg: #1f304e;
     --color-bg-variant: #2d4671;
     --color-primary: rgba(2, 150, 199);
@@ -88,10 +89,16 @@ html {
     font-size: 10px;
 }
 
+body {
+    background-color: var(--color-bg-dark);
+}
+
 .app {
+    width: 65%;
     display: grid;
     grid-template-columns: 0.24fr 0.75fr;
     height: 100vh;
+    margin: 0 auto;
     background-color: var(--color-bg);
 }
 
