@@ -5,16 +5,12 @@ import AuthGuard from "./components/authGuard/AuthGuard";
 
 function App() {
     return (
-        <AuthGuard
-            children={
-                <>
-                    <Sidebar/>
-                    <main>
-                        <Messenger/>
-                    </main>
-                </>
-            }
-        />
+        <AuthGuard>
+            <>
+                <Sidebar/>
+                <Messenger/>
+            </>
+        </AuthGuard>
     );
 }
 

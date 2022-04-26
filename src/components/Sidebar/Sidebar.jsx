@@ -17,7 +17,7 @@ function Sidebar(props) {
 
     const fetchThreads = async () => {
         const result = await getThreads();
-        if (result.length) {
+        if (result && result.length) {
             const threads = result.map((thread) => {
                 return {
                     id: thread.id,
@@ -35,17 +35,10 @@ function Sidebar(props) {
         getData();
     }, []);
 
-    useEffect(() => {
-        const getData = async () => {
-            await fetchThreads();
-        }
-        getData();
-    }, [threads]);
-
     const addThread = () => {
         const threadName = prompt("Enter a thread name.");
         if (threadName) {
-            createThread(threadName);
+            createThread(threadName).then(fetchThreads);
         }
     }
 

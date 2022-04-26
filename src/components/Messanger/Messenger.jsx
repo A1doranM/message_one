@@ -5,9 +5,9 @@ import Thread from "../Thread/Thread";
 function Messenger(props) {
 
     return (
-        <div className="messenger">
+        <main className="messenger">
             <Thread/>
-        </div>
+        </main>
     );
 }
 

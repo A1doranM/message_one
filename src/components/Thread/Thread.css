@@ -53,13 +53,13 @@
     border-top: 1px solid var(--color-light);
 }
 
-.thread .thread__input > form {
+.thread .thread__input {
     display: flex;
     flex: 1;
     flex-direction: row;
 }
 
-.thread .thread__input > form > input {
+.thread .thread__input > input {
     width: 100%;
     outline-width: 0;
     border: none;
@@ -67,12 +67,4 @@
     background-color: transparent;
     padding: 5px;
     color: var(--color-white);
-}
-
-.thread .thread__input > form > button {
-    color: var(--color-white);
-}
-
-.thread .thread__input > form > button:hover {
-    color: var(--color-primary);
 }

@@ -96,7 +96,7 @@ body {
 .app {
     width: var(--container-width-lg);
     display: grid;
-    grid-template-columns: 0.24fr 0.75fr;
+    grid-template-columns: 0.24fr 1fr;
     height: 100vh;
     margin: 0 auto;
     background-color: var(--color-bg);
