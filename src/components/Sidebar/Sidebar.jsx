@@ -15,21 +15,32 @@ import {createThread, getThreads} from "../../data_access_layer/threads/Threads"
 function Sidebar(props) {
     const [threads, setThreads] = useState([]);
 
+    const fetchThreads = async () => {
+        const result = await getThreads();
+        if (result.length) {
+            const threads = result.map((thread) => {
+                return {
+                    id: thread.id,
+                    data: thread,
+                };
+            });
+            setThreads(threads);
+        }
+    }
+
     useEffect(() => {
-        async function getData() {
-            const result = await getThreads();
-            if(result.length) {
-                const threads = result.map((thread) => {
-                    return {
-                        id: thread.id,
-                        data: thread,
-                    };
-                });
-                setThreads(threads);
-            }
+        const getData = async () => {
+            await fetchThreads();
         }
         getData();
     }, []);
+
+    useEffect(() => {
+        const getData = async () => {
+            await fetchThreads();
+        }
+        getData();
+    }, [threads]);
 
     const addThread = () => {
         const threadName = prompt("Enter a thread name.");

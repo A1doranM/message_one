@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./Thread.css";
 import {Avatar, IconButton} from "@mui/material";
-import {MoreHoriz} from "@mui/icons-material";
+import {MicNoneOutlined, MoreHoriz, SendRounded, TimerOutlined} from "@mui/icons-material";
 
 function Thread(props) {
     const [message, setMessage] = useState("");
@@ -33,7 +33,15 @@ function Thread(props) {
                 <form method="POST" className="thread__input" onSubmit={updateMessage}>
                     <input type="text" placeholder="Write a message..." name="message" value={message}
                            onChange={setMessage}/>
-                    <button type="submit">Send a message</button>
+                    <IconButton className="button-light" type="submit">
+                        <TimerOutlined/>
+                    </IconButton>
+                    <IconButton className="button-light" type="button">
+                        <SendRounded/>
+                    </IconButton>
+                    <IconButton className="button-light" type="button">
+                        <MicNoneOutlined/>
+                    </IconButton>
                 </form>
             </div>
         </div>

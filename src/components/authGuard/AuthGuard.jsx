@@ -8,8 +8,6 @@ function AuthGuard({children}) {
     const user = useSelector(selectUser);
     const dispatch = useDispatch();
 
-
-
     useEffect(() => {
         auth.onAuthStateChanged((authUser) => {
            if(authUser) {

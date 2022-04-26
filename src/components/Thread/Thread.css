@@ -36,3 +36,43 @@
     color: var(--color-light);
 }
 
+.thread .thread__messages {
+    flex: 1;
+    overflow: scroll;
+}
+
+.thread__header::-webkit-scrollbar {
+    display: none;
+}
+
+.thread__input {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border-top: 1px solid var(--color-light);
+}
+
+.thread .thread__input > form {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+.thread .thread__input > form > input {
+    width: 100%;
+    outline-width: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 5px;
+    color: var(--color-white);
+}
+
+.thread .thread__input > form > button {
+    color: var(--color-white);
+}
+
+.thread .thread__input > form > button:hover {
+    color: var(--color-primary);
+}
