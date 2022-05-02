@@ -2,6 +2,7 @@ import React from "react";
 import {Avatar, IconButton} from "@mui/material";
 import {MicNoneOutlined, MoreHoriz, SendRounded, TimerOutlined} from "@mui/icons-material";
 import "./Thread.css";
+import Message from "../Message/Message";
 
 function Thread(props) {
 
@@ -20,7 +21,10 @@ function Thread(props) {
                 </IconButton>
             </div>
             <div className="thread__messages">
-
+                <Message/>
+                <Message/>
+                <Message/>
+                <Message/>
             </div>
             <form method="POST" className="thread__input">
                 <input type="text" placeholder="Write a message..." name="message"/>

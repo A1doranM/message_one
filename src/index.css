@@ -68,9 +68,13 @@ table {
 
     --transition: all 400ms ease;
 
-    --container-width-lg: 65%;
-    --container-width-md: 76%;
-    --container-width-sm: 100%;
+    --app-width-lg: 65%;
+    --app-width-md: 76%;
+    --app-width-sm: 100%;
+
+    --message-width-lg: 35rem;
+    --message-width-md: 25rem;
+    --message-width-sm: 20rem;
 }
 
 html {
@@ -94,7 +98,7 @@ body {
 }
 
 .app {
-    width: var(--container-width-lg);
+    width: var(--app-width-lg);
     display: grid;
     grid-template-columns: 0.24fr 1fr;
     height: 100vh;

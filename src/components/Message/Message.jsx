@@ -1,19 +1,19 @@
 import React from 'react';
-import {useSelector} from "react-redux";
-import {selectUser} from "../../redux/reducers/UsersSlice";
+import "./Message.css";
 import {Avatar} from "@mui/material";
 
 function Message() {
-    const user = useSelector(selectUser);
 
     return (
         <div
-            className={"message"}
+            className="message"
         >
-            <Avatar src={photo} className="message__photo" />
+            <Avatar className="message__photo"/>
             <div className="message__contents">
-                <p>{message}</p>
-                <small>{new Date(timestamp?.toDate())}</small>
+                <p className="message__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
+                    adipisci doloribus enim eveniet necessitatibus neque nesciunt sed! Aliquam ipsam iusto optio quaerat
+                    velit. Dicta inventore ipsa repudiandae sequi! Deleniti, repudiandae.</p>
+                <small className="message__timestamp">{Date.now()}</small>
             </div>
         </div>
     );
