@@ -38,7 +38,9 @@ function Sidebar(props) {
     const addThread = () => {
         const threadName = prompt("Enter a thread name.");
         if (threadName) {
-            createThread(threadName).then(fetchThreads);
+            createThread(threadName).then(() => {
+                    fetchThreads();
+            });
         }
     }
 

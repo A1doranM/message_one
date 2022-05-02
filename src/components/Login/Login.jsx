@@ -4,9 +4,11 @@ import {Button} from "@mui/material";
 import {signInUserByGoogle} from "../../data_access_layer/auth/Authentication";
 
 function Login(props) {
-    const signIn = (e) => {
+
+    const signIn = async (e) => {
         e.preventDefault();
-        signInUserByGoogle();
+        const result = await signInUserByGoogle();
+        console.log(result);
     }
 
     return (

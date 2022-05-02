@@ -3,7 +3,6 @@ import {initializeApp} from "firebase/app";
 import {getFirestore,} from "firebase/firestore";
 import {getAuth, GoogleAuthProvider} from "firebase/auth";
 
-
 const firebaseConfig = {
     apiKey: "AIzaSyDKBaXzvchVcv-Tztu1rDsxjNT-slMES5s",
     authDomain: "message-one-9290b.firebaseapp.com",

@@ -6,7 +6,7 @@ export const thread = {
 }
 
 export const threadSlice = createSlice({
-    name: "user",
+    name: "thread",
     initialState: thread,
     reducers: {
         setThread: (state, action) => {
@@ -18,7 +18,7 @@ export const threadSlice = createSlice({
 
 export const {setThread} = threadSlice.actions;
 
-export const selectThreadId = state => state.threadId;
-export const selectThreadName = state => state.threadName;
+export const selectThreadId = state => state.thread.threadId;
+export const selectThreadName = state => state.thread.threadName;
 
 export default threadSlice.reducer;
