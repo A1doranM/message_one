@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import "./Sidebar.css";
 import SearchIcon from "@mui/icons-material/Search";
 import {
@@ -10,54 +10,23 @@ import {
 import {Avatar, IconButton} from "@mui/material";
 import SidebarThread from "./SidebarThread/SidebarThread";
 import {signOutUser} from "../../data_access_layer/auth/Authentication";
-import {createThread, getThreads} from "../../data_access_layer/threads/Threads";
 
-function Sidebar(props) {
-    const [threads, setThreads] = useState([]);
-
-    const fetchThreads = async () => {
-        const result = await getThreads();
-        if (result && result.length) {
-            const threads = result.map((thread) => {
-                return {
-                    id: thread.id,
-                    data: thread,
-                };
-            });
-            setThreads(threads);
-        }
-    }
-
-    useEffect(() => {
-        const getData = async () => {
-            await fetchThreads();
-        }
-        getData();
-    }, []);
-
-    const addThread = () => {
-        const threadName = prompt("Enter a thread name.");
-        if (threadName) {
-            createThread(threadName).then(() => {
-                    fetchThreads();
-            });
-        }
-    }
-
-    return (
+function Sidebar(props) { return (
         <aside className="sidebar">
             <div className="sidebar__header">
                 <div className="sidebar__search">
                     <SearchIcon className="sidebar__searchIcon"/>
                     <input type="text" placeholder="Search" className="sidebar__input"/>
                 </div>
-                <IconButton variant="outlined" className="button-light" onClick={addThread}>
+                <IconButton variant="outlined" className="button-light">
                     <BorderColorOutlined/>
                 </IconButton>
             </div>
             <div className="sidebar__threads">
-                {threads.map(thread => <SidebarThread key={thread.id} id={thread.id}
-                                                      threadName={thread.data.threadName}/>)}
+                <SidebarThread/>
+                <SidebarThread/>
+                <SidebarThread/>
+                <SidebarThread/>
             </div>
             <div className="sidebar__bottom">
                 <Avatar className="sidebar__avatar" onClick={signOutUser}/>

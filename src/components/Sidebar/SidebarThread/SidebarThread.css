@@ -11,14 +11,16 @@
     background-color: var(--color-primary);
 }
 
-.sidebar-thread .sidebar-thread__details {
+.sidebar-thread .sidebar-thread__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: 1.5rem;
-    position: relative;
     width: 100%;
+    height: 100%;
 }
 
-.sidebar-thread .sidebar-thread__details .sidebar-thread__timestamp {
-    position: absolute;
-    top: 1rem;
-    right: 0;
+.sidebar-thread .sidebar-thread__details {
+    display: flex;
+    justify-content: space-between;
 }

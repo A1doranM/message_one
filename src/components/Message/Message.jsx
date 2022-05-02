@@ -3,12 +3,12 @@ import {useSelector} from "react-redux";
 import {selectUser} from "../../redux/reducers/UsersSlice";
 import {Avatar} from "@mui/material";
 
-function Message({id, data: {timestamp, displayName, email, message, photo, uid}}) {
+function Message() {
     const user = useSelector(selectUser);
 
     return (
         <div
-            className={`massage ${user.email === email && "message__sender"}`}
+            className={"message"}
         >
             <Avatar src={photo} className="message__photo" />
             <div className="message__contents">
