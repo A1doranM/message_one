@@ -48,21 +48,16 @@
 
 .thread .thread__messages {
     flex: 1;
-    overflow: scroll;
-}
-
-.thread__input {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem 2rem;
-    background-color: transparent;
-    border-top: 1px solid var(--color-light);
+    overflow-y: scroll;
 }
 
 .thread .thread__input {
     display: flex;
-    flex: 1;
     flex-direction: row;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: transparent;
+    border-top: 1px solid var(--color-light);
 }
 
 .thread .thread__input > input {

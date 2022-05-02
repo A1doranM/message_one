@@ -19,20 +19,21 @@ function Thread(props) {
                     <MoreHoriz/>
                 </IconButton>
             </div>
-            <div className="thead__messages">
-                <form method="POST" className="thread__input">
-                    <input type="text" placeholder="Write a message..." name="message"/>
-                    <IconButton className="button-light" type="button">
-                        <TimerOutlined/>
-                    </IconButton>
-                    <IconButton className="button-light" type="submit">
-                        <SendRounded/>
-                    </IconButton>
-                    <IconButton className="button-light" type="button">
-                        <MicNoneOutlined/>
-                    </IconButton>
-                </form>
+            <div className="thread__messages">
+
             </div>
+            <form method="POST" className="thread__input">
+                <input type="text" placeholder="Write a message..." name="message"/>
+                <IconButton className="button-light" type="button">
+                    <TimerOutlined/>
+                </IconButton>
+                <IconButton className="button-light" type="submit">
+                    <SendRounded/>
+                </IconButton>
+                <IconButton className="button-light" type="button">
+                    <MicNoneOutlined/>
+                </IconButton>
+            </form>
         </div>
     );
 }
