@@ -3,8 +3,13 @@
     grid-template-columns: max-content 1fr;
     grid-column-gap: 1rem;
     max-width: var(--message-width-lg);
-    margin: 1.5rem 2rem;
-    color: var(--color-white);
+    margin: 4px 0;
+
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-active-element);
+    color: var(--color-font-white);
+    padding: 1rem;
 }
 
 .message .message__contents {

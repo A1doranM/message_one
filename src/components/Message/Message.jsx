@@ -5,9 +5,7 @@ import {Avatar} from "@mui/material";
 function Message() {
 
     return (
-        <div
-            className="message"
-        >
+        <div className="message">
             <Avatar className="message__photo"/>
             <div className="message__contents">
                 <p className="message__body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus

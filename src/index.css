@@ -58,12 +58,12 @@ table {
 /********************************************/
 
 :root {
-    --color-primary-dark: #122135;
-    --color-primary: #1f304e;
-    --color-primary-light: #2d4671;
-    --color-active-element: rgba(2, 150, 199);
-    --color-active-element-variant: #00000;
-    --color-white: #fff;
+    --color-primary-dark: #482880;
+    --color-primary: #673ab7;
+    --color-primary-light: #8561c5;
+    --color-active-element: #4615b2;
+    --color-active-element-variant: #651fff;
+    --color-font-white: rgba(255, 255, 255, 0.79);
     --color-light: rgba(190, 190, 190, 0.1);
 
     --transition: all 400ms ease;
@@ -107,7 +107,7 @@ body {
 }
 
 .MuiIconButton-root.button-light {
-    color: var(--color-white);
+    color: var(--color-font-white);
 }
 
 .MuiIconButton-root.button-light:hover {
