@@ -8,7 +8,7 @@
 }
 
 .sidebar-thread:hover {
-    background-color: var(--color-primary);
+    background-color: var(--color-active-element);
 }
 
 .sidebar-thread .sidebar-thread__body {

@@ -58,11 +58,11 @@ table {
 /********************************************/
 
 :root {
-    --color-bg-dark: #122135;
-    --color-bg: #1f304e;
-    --color-bg-variant: #2d4671;
-    --color-primary: rgba(2, 150, 199);
-    --color-primary-variant: #00000;
+    --color-primary-dark: #122135;
+    --color-primary: #1f304e;
+    --color-primary-light: #2d4671;
+    --color-active-element: rgba(2, 150, 199);
+    --color-active-element-variant: #00000;
     --color-white: #fff;
     --color-light: rgba(190, 190, 190, 0.1);
 
@@ -72,9 +72,9 @@ table {
     --app-width-md: 76%;
     --app-width-sm: 100%;
 
-    --message-width-lg: 35rem;
-    --message-width-md: 25rem;
-    --message-width-sm: 20rem;
+    --message-width-lg: 45%;
+    --message-width-md: 55%;
+    --message-width-sm: 65%;
 }
 
 html {
@@ -94,7 +94,7 @@ html {
 }
 
 body {
-    background-color: var(--color-bg-dark);
+    background-color: var(--color-primary-dark);
 }
 
 .app {
@@ -103,7 +103,7 @@ body {
     grid-template-columns: 0.24fr 1fr;
     height: 100vh;
     margin: 0 auto;
-    background-color: var(--color-bg);
+    background-color: var(--color-primary);
 }
 
 .MuiIconButton-root.button-light {
@@ -111,5 +111,5 @@ body {
 }
 
 .MuiIconButton-root.button-light:hover {
-    color: var(--color-primary);
+    color: var(--color-active-element);
 }

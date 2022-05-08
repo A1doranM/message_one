@@ -18,10 +18,10 @@
 .login .login__button {
     width: 30rem;
     color: var(--color-white);
-    background-color: var(--color-primary);
+    background-color: var(--color-active-element);
 }
 
 .login .login__button:hover {
-    color: var(--color-primary);
+    color: var(--color-active-element);
     background-color: var(--color-white);
 }
