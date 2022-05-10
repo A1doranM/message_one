@@ -1,10 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 import {Avatar, IconButton} from "@mui/material";
 import {MicNoneOutlined, MoreHoriz, SendRounded, TimerOutlined} from "@mui/icons-material";
 import "./Thread.css";
 import Message from "../Message/Message";
+import {useDispatch} from "react-redux";
 
 function Thread(props) {
+    const [message, setMessage] = useState("");
+    const dispatch = useDispatch();
+
+    const sendMessage = (e) => {
+        e.preventDefault();
+
+
+    }
 
     return (
         <div className="thread">
@@ -26,8 +35,8 @@ function Thread(props) {
                 <Message/>
                 <Message/>
             </div>
-            <form method="POST" className="thread__input">
-                <input type="text" placeholder="Write a message..." name="message"/>
+            <form method="POST" className="thread__input" onClick={}>
+                <input type="text" placeholder="Write a message..." name="message" value={message}/>
                 <IconButton className="button-light" type="button">
                     <TimerOutlined/>
                 </IconButton>
